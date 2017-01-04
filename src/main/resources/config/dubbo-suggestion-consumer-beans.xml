@@ -5,7 +5,7 @@
        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 	<context:component-scan base-package="com.fengdai.suggestion" />
 	<dubbo:reference id="mySuggestionService" interface="com.fengdai.suggestion.service.MySuggestionService"/>
-	<dubbo:application name="consumer-dubbo" />
+	<dubbo:application name="dubbo-suggestion" />
 	<dubbo:registry address="zookeeper://127.0.0.1:2181" />
 	<dubbo:consumer timeout="5000" />
 </beans>
